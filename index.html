@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SignalCheck helps you pause, assess, and verify online information before sharing." />
+  <title>SignalCheck — Media Literacy Toolkit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="topline"><span class="dot"></span> A calmer way to navigate a noisy internet</div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="SignalCheck home"><span class="brand-mark">✳</span><span>Signal<span class="brand-accent">Check</span></span></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="#learn">Learn</a><a href="#check">Check a signal</a><a href="#quiz">Quiz</a><a href="#programme">Programme</a>
+    </nav>
+    <a class="header-cta" href="#check">Check a message <span>↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero section-wrap">
+      <div class="hero-copy">
+        <p class="eyebrow">Media literacy, made practical</p>
+        <h1>Pause.<br /><em>Look closer.</em><br />Share wiser.</h1>
+        <p class="hero-lede">SignalCheck helps you spot warning signs in online content and build the habits to verify before you amplify.</p>
+        <div class="hero-actions"><a class="button button-dark" href="#check">Check a message <span>→</span></a><a class="text-link" href="#learn">How it works <span>↓</span></a></div>
+        <div class="hero-note"><span class="note-icon">⌁</span><span>Not a fact-checker. A smarter first pause.</span></div>
+      </div>
+      <div class="hero-art" aria-label="Illustration of a signal being examined">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="signal-card"><span class="signal-label">SIGNAL / 001</span><div class="signal-wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><strong>look closer</strong><span class="signal-sub">before you pass it on</span></div>
+        <div class="floating-tag tag-source">SOURCE <b>?</b></div><div class="floating-tag tag-date">DATE <b>↗</b></div><div class="floating-tag tag-tone">TONE <b>!</b></div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Media literacy reminders"><div class="ticker-track"><div class="ticker-group"><span>CHECK THE SIGNAL</span><b>?</b><span>QUESTION THE SOURCE</span><b>?</b><span>VERIFY BEFORE SHARING</span><b>?</b></div><div class="ticker-group" aria-hidden="true"><span>CHECK THE SIGNAL</span><b>?</b><span>QUESTION THE SOURCE</span><b>?</b><span>VERIFY BEFORE SHARING</span><b>?</b></div></div></section>
+
+    <section class="intro section-wrap" id="learn">
+      <div class="section-kicker">01 / The big idea</div>
+      <div class="intro-grid"><h2>Good information habits are a <em>skill.</em></h2><div><p class="large-copy">The internet moves fast. Your judgment doesn’t have to.</p><p>Not everything that looks like news is reliable. This toolkit gives you a simple way to notice red flags, ask better questions, and choose your next step.</p><a class="text-link" href="#learn-details">Explore the basics <span>→</span></a></div></div>
+    </section>
+
+    <section class="learn-cards section-wrap" id="learn-details">
+      <article class="learn-card card-teal"><span class="card-number">01</span><div class="card-symbol">◌</div><h3>Misinformation</h3><p>False or inaccurate content shared without necessarily meaning to deceive.</p><button class="learn-more" data-modal="misinformation">Read the signal <span>→</span></button></article>
+      <article class="learn-card card-yellow"><span class="card-number">02</span><div class="card-symbol">◒</div><h3>Disinformation</h3><p>False content deliberately created or spread to mislead people.</p><button class="learn-more" data-modal="disinformation">Read the signal <span>→</span></button></article>
+      <article class="learn-card card-coral"><span class="card-number">03</span><div class="card-symbol">⌁</div><h3>Clickbait</h3><p>Attention-grabbing language designed to make you click before you think.</p><button class="learn-more" data-modal="clickbait">Read the signal <span>→</span></button></article>
+    </section>
+
+    <section class="checker section-wrap" id="check">
+      <div class="section-kicker">02 / Check a signal</div>
+      <div class="checker-header"><div><h2>Does this message<br /><em>need a second look?</em></h2></div><p>Paste a headline or message below. We’ll look for common warning signs—not declare a verdict.</p></div>
+      <div class="checker-layout">
+        <form class="check-form" id="checker-form">
+          <label for="message">Headline or message <span>required</span></label>
+          <textarea id="message" rows="5" placeholder="Paste something you’re unsure about..."></textarea>
+          <div class="input-row"><div><label for="source">Source <span>optional</span></label><input id="source" type="text" placeholder="e.g. News site or account" /></div><div><label for="date">Date <span>optional</span></label><input id="date" type="date" /></div></div>
+          <button class="button button-dark" type="submit">Run the check <span>→</span></button><p class="form-error" id="form-error" role="alert"></p>
+        </form>
+        <div class="result-panel" id="result-panel"><div class="result-empty"><span class="result-icon">✳</span><h3>Your signal report<br />will appear here.</h3><p>We’ll explain what stood out and what to verify next.</p></div></div>
+      </div>
+    </section>
+
+    <section class="principles section-wrap"><div class="principles-copy"><div class="section-kicker">03 / Your quick guide</div><h2>Five questions<br />before you <em>share.</em></h2></div><ol class="principle-list"><li><span>01</span><div><strong>Who made it?</strong><p>Look for an identifiable publisher, author, or original source.</p></div></li><li><span>02</span><div><strong>When was it made?</strong><p>Old stories can look new when they’re reposted without context.</p></div></li><li><span>03</span><div><strong>What’s the evidence?</strong><p>Separate a confident claim from links, data, or firsthand reporting.</p></div></li><li><span>04</span><div><strong>How does it make me feel?</strong><p>Urgency and outrage are useful signals to slow down.</p></div></li><li><span>05</span><div><strong>Can another source confirm it?</strong><p>Cross-check important claims with reliable, independent sources.</p></div></li></ol></section>
+
+    <section class="quiz-section section-wrap" id="quiz"><div class="section-kicker">04 / Test your instincts</div><div class="quiz-heading"><h2>Real, fake, or<br /><em>needs verification?</em></h2><p>There’s no shame in pausing. Practice spotting the difference with three quick scenarios.</p></div><div class="quiz-shell"><div class="quiz-progress"><span id="quiz-progress-label">QUESTION 1 / 3</span><div><i id="quiz-progress-bar"></i></div></div><div id="quiz-content"></div></div></section>
+
+    <section class="programme section-wrap" id="programme"><div class="programme-copy"><div class="section-kicker">05 / Bring it to a group</div><h2>Turn awareness<br />into a <em>conversation.</em></h2><p>Use SignalCheck as part of a classroom, community, or workplace session. Measure what changes before and after the discussion.</p></div><div class="programme-steps"><div><span>01</span><strong>Pre-test</strong><p>10 questions to understand your starting point.</p></div><div><span>02</span><strong>Learn together</strong><p>Use the guide, examples, and checker in a practical session.</p></div><div><span>03</span><strong>Post-test</strong><p>Compare scores and make progress visible.</p></div><button class="button button-light" id="assessment-button">Open assessment guide <span>→</span></button></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-brand"><a class="brand" href="#top"><span class="brand-mark">✳</span><span>Signal<span class="brand-accent">Check</span></span></a><p>A practical toolkit for a noisier internet.</p></div><div><span class="footer-label">Explore</span><a href="#learn">Learn</a><a href="#check">Check a signal</a><a href="#quiz">Take the quiz</a></div><div><span class="footer-label">Remember</span><p>Pause. Check. Verify.<br />Then decide.</p></div><div class="footer-bottom">© 2026 SignalCheck <span>Built for better digital habits.</span></div></footer>
+
+  <dialog id="info-dialog"><button class="dialog-close" aria-label="Close">×</button><div id="dialog-content"></div></dialog>
+  <dialog id="assessment-dialog"><button class="dialog-close" aria-label="Close">×</button><div class="dialog-kicker">GROUP TOOLKIT</div><h2>Pre-test → learn → post-test</h2><p>For a simple programme session, give participants the same 10-question assessment before and after your awareness activity. Record each participant’s score, then compare the group average.</p><div class="assessment-box"><strong>Suggested measure</strong><span>Improvement % = ((post-test − pre-test) ÷ pre-test) × 100</span></div><button class="button button-dark dialog-dismiss">Got it <span>→</span></button></dialog>
+  <script src="app.js" defer></script>
+</body>
+</html>
+

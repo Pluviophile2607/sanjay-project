@@ -1,0 +1,12 @@
+{
+  "quiz": [
+    {"question":"A post says: ‘SHOCKING! Share this with EVERYONE before it gets deleted!!!’ but gives no source. What is your best next step?","options":["Share it quickly","Needs verification","It must be real"],"answer":1,"explanation":"Urgency, sensational language, excessive punctuation, and no source are strong reasons to pause and verify."},
+    {"question":"You find an article from two years ago being shared as breaking news today. How should you classify it?","options":["Real as presented","Fake in every case","Needs verification"],"answer":2,"explanation":"The original article may be real, but its date and current context need checking before you trust or share the post."},
+    {"question":"A claim includes a named publisher, a clear date, links to evidence, and is confirmed by two independent reliable outlets. What does that suggest?","options":["A stronger signal of reliability","It is definitely true","It is clickbait"],"answer":0,"explanation":"Multiple independent checks are reassuring, but responsible readers still avoid treating a simple checklist as absolute proof."}
+  ],
+  "modalContent": {
+    "misinformation": {"title":"Misinformation","body":"Misinformation is false or inaccurate information shared without necessarily intending to deceive. A person may pass it on because they believe it is true. The best response is to correct carefully and share the context that was missing."},
+    "disinformation": {"title":"Disinformation","body":"Disinformation is false content deliberately created or spread to mislead people. Look for coordinated language, missing evidence, impersonation, or a clear attempt to provoke a reaction."},
+    "clickbait": {"title":"Clickbait","body":"Clickbait uses dramatic promises, curiosity gaps, or emotional language to earn your click. The headline may overstate what the article actually supports. Read beyond the headline and inspect the source."}
+  }
+}
